@@ -4,47 +4,116 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Events</title>
+	<link rel="stylesheet" type="text/css" href="assets/styles/styleHeaderFooter.css">
 </head>
 <body>
 	<header>
 		<!--le logo à gauche-->
 		<div>
-			<img src="">
-			<h1></h1>
+			<img src="assets/Images/group-2.svg">
+			<h1>[Events]</h1>
 		</div>
 		<!--la barre de navigation-->
 		<div>
-			<nav>
+			<nav class="menu">
 				<ul>
-					<li><div></div></li>
-					<li><div></div></li>
-					<li><div></div></li>
-					<li><div></div></li>
+					<li>
+						<div class="menuButton">
+							<img src="assets/Icones/search_icon.svg">
+							<span>Search</span>
+						</div>
+					</li>
+					<li>
+						<div class="menuButton">
+							<img src="assets/Icones/about_icon.svg">
+							<span>About</span>
+						</div>
+					</li>
+					<li>
+						<div class="menuButton">
+							<img src="assets/Icones/blog_icon.svg">
+							<span>Blog</span>
+						</div>
+					</li>
+					<li>
+						<div class="menuButton">
+							<img src="assets/Icones/more_icon.svg">
+							<span>More</span>
+						</div>
+					</li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	<main></main>
 	<footer>
-		<!--navigation et social media-->
-		<div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-		<!--subscribe-->
-		<div></div>
-		<!--contact-->
-		<div></div>
-		<!--about-->
-		<div></div>
-		<!--copyright et social media-->
-		<div>
-			<div>
-				<small class="copyrightText">&copy; 2020 [Events] Inc. All rights reserved</small>
+		<!--footer fond noir-->
+		<div class="informations">
+			<!--navigation et social media-->
+			<div class="infoBloc1">
+				<div class="left framed">
+					<nav>
+						<hr>
+						<ul>
+							<li>HOME</li>
+							<li>SEARCH</li>
+							<li>ABOUT US</li>
+							<li>ADVERTISE</li>
+						</ul>
+						<hr>
+					</nav>
+				</div>
+				<div class="center surrounded">
+					<img src="assets/Icones/mapWhite.png" alt="Map icon">
+				</div>
+				<div class="right framed">
+					<nav>
+						<hr>
+						<ul>
+							<li>FACOBOOK</li>
+							<li>TWITTER</li>
+							<li>INSTAGRAM</li>
+							<li>BLOG</li>
+						</ul>
+						<hr>
+					</nav>
+				</div>
 			</div>
-			<div>
-				<img src=""> <!--*5 ito-->
+			<div class="infoBloc2">
+				<!--subscribe-->
+				<div class="infoBloc subscribe">
+					<h3>Subscribe</h3>
+					<form action="">
+						<input type="email" id="email" name="email" value="Insert your e-mail here">
+						<input type="button" class="send" name="button" value="Send">
+					</form>
+				</div>
+				<!--contact-->
+				<div class="infoBloc contact">
+					<h3>Contact</h3>
+					<p>Have a question or a suggestion?</p>
+					<p><a href="">contact@events.com</a></p>
+				</div>
+				<!--about-->
+				<div class="infoBloc about">
+					<h3>About</h3>
+					<p>
+						[Events]... your gateway to connect with events around your area. <a href="">learn more</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--copyright et social media, fond gris-->
+		<div class="copyright">
+			<div class="iconsFooter">
+				<img class="icons socialMedia" src="assets/Icones/fbWhite.png">
+				<img class="icons socialMedia" src="assets/Icones/twitterWhite.png">
+				<img class="icons socialMedia" src="assets/Icones/instaWhite.png">
+				<img class="icons socialMedia" src="assets/Icones/tumblrWhite.png">
+				<img class="icons socialMedia" src="assets/Icones/linkedinWhite.png"> <!--*5 ito-->
+			</div>
+			<div class="copyrightText">
+				<small>&copy; 2020 [Events] Inc. All rights reserved</small>
 			</div>
 		</div>
 	</footer>

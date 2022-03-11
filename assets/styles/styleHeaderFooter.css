@@ -1,0 +1,134 @@
+/*Polices*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+@font-face {
+  font-family: "free-fa-brands";
+  src: local("../Fonts/free-fa-brands-400.woff2") format("woff2");
+  font-family: "free_fa_regular";
+  src: local("../Fonts/free_fa_regular_400.woff2") format("woff2");
+  font-family: "free-fa-solid";
+  src: local("../Fonts/free-fa-solid-900.woff2") format("woff2");
+}
+
+/*style par defaut*/
+*{
+	box-sizing: border-box;	/*the padding will be counted when determining the width and height*/
+	list-style-type: none;	/*pour ne pas mettre les puces dans les listes à puces*/
+	line-height: 1.5em;
+}
+
+body{
+	margin: 0;
+	font-family: "free_fa_regular", 'Roboto', serif;
+}
+
+/*style du footer*/
+footer{
+	height: 40vh;
+}
+
+/*footer de fond noir*/
+.informations{
+	background-color: black;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+/*le petit menu encadré (home, about etc)*/
+.infoBloc1{
+	display: flex;
+	justify-content: space-around;
+	width: 50%;
+	margin: 3em 25%;
+}
+
+a{
+	color: #d35649;
+	text-decoration: none;
+}
+
+.left, .right{
+	margin: auto;
+	width: 100%;	/*pour que les elements ne se retressissent pas par sufficance d'espace*/
+}
+
+.surrounded img{
+	width: 6em;
+	height: 6em;
+	border: 1px solid white;
+	border-radius: 50%;
+	padding: 2em;
+}
+
+.framed ul{
+	display: flex;
+	justify-content: space-around;
+	padding: 0;
+	font-size: smaller;
+	font-weight: bold;
+}
+
+/*subscribe, contact about*/
+.infoBloc2{
+	display: flex;
+	justify-content: space-around;
+	padding: 0.5em 1em;
+}
+
+/*Subscribe, contact, about blocs*/
+.infoBloc{
+	width: 30%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.infoBloc form{
+	font-size: 0;
+}
+
+.infoBloc #email{
+	background-color: black;
+	border: 0.5px solid #444;
+	color: #444;
+	padding: 0.5em;
+	width: 65%;
+}
+
+/*send button*/
+.infoBloc .send{
+	width: 25%;
+	height: 3em;
+	background-color: #444;
+	border: 0.01px solid #888;
+	border-radius: 7%;
+	color: white;
+	font-weight: bold;
+}
+
+.infoBloc p{
+	font-size: smaller;
+}
+
+/*footer de fond gris*/
+.copyright{
+	background-color: #444;
+	height: 15%;
+	display: flex;
+	justify-content: space-between;
+	color: #aaa;
+}
+
+.copyright div{
+	margin: 0.3em;
+}
+.socialMedia{
+	width: 0.7em;
+	margin: 0 0.7em;
+}
+
+.copyrightText small{
+	color: #eee;
+	font-size: 0.7em;
+}
