@@ -21,6 +21,72 @@ body{
 	font-family: "free_fa_regular", 'Roboto', serif;
 }
 
+/*en-tete*/
+header{
+	display: flex;
+	background-color: #d35649;
+	padding: 1em 0.7em 0.5em 0.7em;
+	justify-content: space-between;
+	height: 20vh;
+	color: white;
+}
+
+/*le logo*/
+.logo{
+	width: 10%;
+	display: flex;
+	align-items: flex-end;
+	margin: 0.4em 0;
+	height: fit-content;
+}
+
+.logo img{
+	width: 40%;
+}
+
+.logo h1{
+	width: 60%;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	text-shadow: 2px 2px #575a89;
+	text-align: end;
+	font-size: 1.3em;
+} 
+
+.menu{
+	width: 35%;
+	display: flex;
+	align-items: center;
+	margin: 0.5em 0;
+}
+
+/*menu de navigation*/
+.menu ul{
+	display: flex;
+	margin: 0;
+	padding: 0;
+	justify-content: space-around;
+}
+
+.menu li{
+	width: 20%;
+}
+.menuButton {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	font-size: small;
+}
+
+.menuButton img{
+	width: 20%;
+}
+
+.menuButton span{
+	display: inline-block;
+	width: 65%;
+}
 /*style du footer*/
 footer{
 	height: 40vh;
