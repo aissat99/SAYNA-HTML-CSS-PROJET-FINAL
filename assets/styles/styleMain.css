@@ -1,0 +1,127 @@
+/*barre de rrecherche*/
+.searchArea{
+	background-image: url("../Images/group-1.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 2em 0;
+	height: 25em;
+}
+
+.searchArea h1{
+	color: white;
+	font-size: 1.5em;
+	text-shadow: 2px 2px black;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.searchBloc{
+	width: 50%;
+	margin: auto;
+	height: 50%;
+}
+.searchBar{
+	background-color: #fffa;
+	border-radius: 2.5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	margin: auto;
+	padding: 1em 0.7em;
+	height: fit-content;
+}
+
+.searchBar h2{
+	margin: 0;
+	text-align: center;
+	width: 100%;
+}
+
+.searchBar a{
+	text-decoration: none;
+	color: black;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 0.5em;
+	width: 50%;
+	margin: 0.5em 0;
+}
+
+.searchBar form{
+	width: 95%;
+	display: grid;
+	grid-auto-columns: 87% 13%;
+	margin-top: 1em;
+}
+
+/*searchbar*/
+form .input1{
+	opacity: 0.8;
+	grid-row 1/1;
+	grid-column: 1/2;
+	color: gray;
+	border: 1px solid gray;
+	border-radius: 1px;
+}
+
+/*bouton search*/
+form .input2{
+	grid-row 1/1;
+	grid-column: 2/2;
+	background-color: #d35649;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	height: 2em;
+	width: 100%;
+	border: 0.7px solid #d35649;
+	border-radius: 2.5px;
+	font-family: 'Roboto';
+}
+
+/*how it works button*/
+.doc{
+	display: flex;
+	justify-content: center;
+	margin: 1em 0;
+	color: black;
+}
+
+.doc button{
+	border: 0px;
+	padding: 0.5em 0.6em;
+	border-radius: 3px;
+	font-weight: bold;
+}
+
+/*le principe de [Events]*/
+.principle h2{
+	color: #d35649;
+	text-align: center;
+	margin: 1.5em 0;
+}
+
+/*les 4 etapes*/
+.principles{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.step{
+	width: 40%;
+	padding: 1em 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: smaller;
+	text-align: center;
+}
+
+.step img{
+	width: 7%;
+}
