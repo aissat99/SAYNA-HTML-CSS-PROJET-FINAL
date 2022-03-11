@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Events</title>
+	<link rel="stylesheet" type="text/css" href="assets/styles/styleHeaderFooter.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/styleMain.css">
+	<!--bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!--font awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<header>
+		<!--le logo à gauche-->
+		<div class="logo">
+			<img src="assets/Images/group-2.svg">
+			<a href="index.html"><h1>[Events]</h1></a>
+		</div>
+		<!--la barre de navigation-->
+		<div class="menu">
+			<nav>
+				<ul>
+					<li>
+						<div class="menuButton">
+							<a href="search.html">
+								<img class="survol" src="assets/Icones/searchGrey.png">
+								<img class="normal" src="assets/Icones/searchWhite.png">
+								<span>Search</span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="menuButton">
+							<a href="about.html">
+								<img class="survol" src="assets/Icones/aboutGrey.png">
+								<img class="normal" src="assets/Icones/aboutWhite.png">
+								<span>About</span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="menuButton">
+							<a href="">
+								<img class="survol" src="assets/Icones/blogGrey.png">
+								<img class="normal" src="assets/Icones/blogWhite.png">
+								<span>Blog</span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="menuButton">
+							<a href="">
+								<img class="survol" src="assets/Icones/moreGrey.png">
+								<img class="normal" src="assets/Icones/moreWhite.png">
+								<span>More</span>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section class="section1 filterSearch">
+            <div id="event-search" class=" section1-content bg-primary-gray py-4 mt-4 container">
+                <h3 class="primary-gray text-center py-3 text-secondary">Filter by location, host, subject, date, daytime:</h3>
+                <form class="search d-grid gap-2">
+                    <div class="row">
+                    	<div class="col-2">
+	                        <label for="location">Location</label>
+	                        <input type="text" class="form-control" id="location">
+	                    </div>
+	                    <div class="col-2">
+	                        <label for="host">Host</label>
+	                        <input type="text" class="form-control" id="host">
+	                    </div>
+	                    <div class="col-2">
+	                        <label for="subject">Subject</label>
+	                        <input type="text" class="form-control" id="subject">
+	                    </div>
+	                    <div class="col-2">
+	                        <label for="initial-date">Initial Date</label>
+	                        <input type="date" class="form-control" id="initial-date">
+	                    </div>
+	                    <div class="col-2">
+	                        <label for="final-date">Final Date</label>
+	                        <input type="date" class="form-control" id="final-date">
+	                    </div>
+	                    <div class="col-2">
+	                        <label for="final-date">Daytime</label>
+	                        <select class="form-select" aria-label="Default select example">
+	                            <option selected>Choose...</option>
+	                            <option value="1">Day</option>
+	                            <option value="2">Night</option>
+	                         </select>
+	                    </div>
+                    </div>
+                    <div class="row d-flex align-items-center justify-content-center">
+                    	<div class="col-1">
+                    		<button type="submit" class="btn btn-primary">Search</button>
+                    	</div>
+                    	<div class="col-2">
+                    		<button type="submit" class="btn btn-warning text-white">
+	                            <i class="fa-regular fa-pen-to-square"></i>
+	                            Clear form
+                        	</button>
+                    	</div>
+                    </div>
+                </form>
+            </section>
+		<section class="resultatRecherche">
+			<h2>Search Result Found 7 [Events] Nearby</h2>
+			<div class="shots">
+				<div class="shot">
+					<p class="eventName">go to [gathering] example</p>
+					<img src="assets/Images/group-2.svg">
+				</div>
+				<div class="shot">
+					<p class="eventName">go to [gathering] example</p>
+					<img src="assets/Images/group-2.svg">
+				</div>
+				<div class="shot">
+					<p class="eventName">go to [gathering] example</p>
+					<img src="assets/Images/group-2.svg">
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<!--footer fond noir-->
+		<div class="informations">
+			<!--navigation et social media-->
+			<div class="infoBloc1">
+				<div class="left framed">
+					<nav>
+						<hr>
+						<ul>
+							<li class="menuButton"><a href="index.html">HOME</a></li>
+							<li class="menuButton"><a href="search.html">SEARCH</a></li>
+							<li class="menuButton"><a href="about.html">ABOUT US</a></li>
+							<li class="menuButton"><a href="index.html">ADVERTISE</a></li>
+						</ul>
+						<hr>
+					</nav>
+				</div>
+				<div class="center surrounded">
+					<img class="survol" src="assets/Icones/mapGrey.png">
+					<img class="normal" src="assets/Icones/mapWhite.png">
+				</div>
+				<div class="right framed">
+					<nav>
+						<hr>
+						<ul>
+							<li class="menuButton"><a href="index.html">FACOBOOK</a></li>
+							<li class="menuButton"><a href="index.html">TWITTER</a></li>
+							<li class="menuButton"><a href="index.html">INSTAGRAM</a></li>
+							<li class="menuButton"><a href="index.html">BLOG</a></li>
+						</ul>
+						<hr>
+					</nav>
+				</div>
+			</div>
+			<div class="infoBloc2">
+				<!--subscribe-->
+				<div class="infoBloc subscribe">
+					<h3>Subscribe</h3>
+					<form action="">
+						<input type="email" id="email" name="email" value="Insert your e-mail here">
+						<input type="button" class="send" name="button" value="Send">
+					</form>
+				</div>
+				<!--contact-->
+				<div class="infoBloc contact">
+					<h3>Contact</h3>
+					<p>Have a question or a suggestion?</p>
+					<p><a href="">contact@events.com</a></p>
+				</div>
+				<!--about-->
+				<div class="infoBloc about">
+					<h3>About</h3>
+					<p>
+						[Events]... your gateway to connect with events around your area. <a href="">learn more</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--copyright et social media, fond gris-->
+		<div class="copyright">
+			<div class="iconsFooter">
+				<img class="icons socialMedia" src="assets/Icones/fbWhite.png">
+				<img class="icons socialMedia" src="assets/Icones/twitterWhite.png">
+				<img class="icons socialMedia" src="assets/Icones/instaWhite.png">
+				<img class="icons socialMedia" src="assets/Icones/tumblrWhite.png">
+				<img class="icons socialMedia" src="assets/Icones/linkedinWhite.png"> <!--*5 ito-->
+			</div>
+			<div class="copyrightText">
+				<small>&copy; 2020 [Events] Inc. All rights reserved</small>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
