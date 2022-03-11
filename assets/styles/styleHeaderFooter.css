@@ -11,9 +11,9 @@
 
 /*style par defaut*/
 *{
-	box-sizing: border-box;	/*the padding will be counted when determining the width and height*/
+	box-sizing: border-box;	/*le padding sera inclus dans le calcul du width et height*/
 	list-style-type: none;	/*pour ne pas mettre les puces dans les listes à puces*/
-	line-height: 1.5em;
+	line-height: 1.5em;	/*interligne*/
 }
 
 body{
@@ -42,6 +42,13 @@ header{
 
 .logo img{
 	width: 40%;
+}
+
+.logo a{
+	text-decoration: none;
+	font-weight: normal;
+	text-shadow: 2px 2px #575a89;
+	color: inherit;
 }
 
 .logo h1{
@@ -73,20 +80,57 @@ header{
 	width: 20%;
 }
 .menuButton {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
 	font-size: small;
+	color: white;
+	margin: auto;
+}
+
+header .menuButton a{
+	color: inherit;
+	display: grid;
+	grid-template-columns: 3em 5em;	/*nb de colonnes*/
+	grid-template-rows: 2em; /*nb de lignes*/
+	justify-content: space-between;
+	text-decoration: none;
 }
 
 .menuButton img{
-	width: 20%;
+	width: 40%;
+	grid-row: 1; /*ordre de la ligne*/
+	grid-column: 1/2;	/*odre de cette grille dans l'affichage, et non sa taille*/
+}
+.menuButton span{
+	width: 65%;
+	grid-row: 1;
+	grid-column: 2/2;
 }
 
-.menuButton span{
-	display: inline-block;
-	width: 65%;
+/*animations du header*/
+.normal{
+	opacity: 1;
 }
+
+.survol {
+	opacity: 1;
+}
+
+.survol:hover {
+	opacity: 1;
+}
+
+.normal:hover{
+	opacity: 0;
+}
+
+/*animations du footer*/
+.menuButton:hover{	/*valable pour header et footer*/
+	color: #98a5a5;
+}
+
+footer a:hover{
+	text-decoration: underline;
+}
+
 /*style du footer*/
 footer{
 	height: 40vh;
@@ -109,7 +153,7 @@ footer{
 	margin: 3em 25%;
 }
 
-a{
+footer a{
 	color: #d35649;
 	text-decoration: none;
 }
@@ -119,7 +163,19 @@ a{
 	width: 100%;	/*pour que les elements ne se retressissent pas par sufficance d'espace*/
 }
 
+footer .menuButton a{
+	color: inherit;
+	text-decoration: none;
+}
+
+.surrounded{
+	display: grid;
+	grid-template-columns: 6em;
+}
+
 .surrounded img{
+	grid-column: 1;
+	grid-row: 1;
 	width: 6em;
 	height: 6em;
 	border: 1px solid white;
@@ -131,7 +187,6 @@ a{
 	display: flex;
 	justify-content: space-around;
 	padding: 0;
-	font-size: smaller;
 	font-weight: bold;
 }
 

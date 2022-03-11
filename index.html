@@ -5,13 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Events</title>
 	<link rel="stylesheet" type="text/css" href="assets/styles/styleHeaderFooter.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/styleMain.css">
 </head>
 <body>
 	<header>
 		<!--le logo à gauche-->
 		<div class="logo">
 			<img src="assets/Images/group-2.svg">
-			<h1>[Events]</h1>
+			<a href="index.html"><h1>[Events]</h1></a>
 		</div>
 		<!--la barre de navigation-->
 		<div class="menu">
@@ -19,33 +20,64 @@
 				<ul>
 					<li>
 						<div class="menuButton">
-							<img src="assets/Icones/searchWhite.png">
-							<span>Search</span>
+							<a href="search.html">
+								<img class="survol" src="assets/Icones/searchGrey.png">
+								<img class="normal" src="assets/Icones/searchWhite.png">
+								<span>Search</span>
+							</a>
 						</div>
 					</li>
 					<li>
 						<div class="menuButton">
-							<img src="assets/Icones/aboutWhite.png">
-							<span>About</span>
+							<a href="about.html">
+								<img class="survol" src="assets/Icones/aboutGrey.png">
+								<img class="normal" src="assets/Icones/aboutWhite.png">
+								<span>About</span>
+							</a>
 						</div>
 					</li>
 					<li>
 						<div class="menuButton">
-							<img src="assets/Icones/blogWhite.png">
-							<span>Blog</span>
+							<a href="">
+								<img class="survol" src="assets/Icones/blogGrey.png">
+								<img class="normal" src="assets/Icones/blogWhite.png">
+								<span>Blog</span>
+							</a>
 						</div>
 					</li>
 					<li>
 						<div class="menuButton">
-							<img src="assets/Icones/moreWhite.png">
-							<span>More</span>
+							<a href="">
+								<img class="survol" src="assets/Icones/moreGrey.png">
+								<img class="normal" src="assets/Icones/moreWhite.png">
+								<span>More</span>
+							</a>
 						</div>
 					</li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-	<main></main>
+	<main>
+		<div class="searchArea">
+			<h1></h1>
+			<div class="searchBloc">
+				<div class="searchBar">
+					<h2></h2>
+					<form>
+						<input type="text" name="text" value="Insert your location here">
+						<input type="button" name="button" value="Search">
+					</form>
+				</div>
+				<!--How it works button-->
+				<div class="doc"></div>
+			</div>
+		</div>
+		<!--principe de fonctionnement de [Events]-->
+		<div class="principle"></div>
+		<!--les points forts de [Events]-->
+		<div class="quality"></div>
+	</main>
 	<footer>
 		<!--footer fond noir-->
 		<div class="informations">
@@ -55,25 +87,26 @@
 					<nav>
 						<hr>
 						<ul>
-							<li>HOME</li>
-							<li>SEARCH</li>
-							<li>ABOUT US</li>
-							<li>ADVERTISE</li>
+							<li class="menuButton"><a href="index.html">HOME</a></li>
+							<li class="menuButton"><a href="search.html">SEARCH</a></li>
+							<li class="menuButton"><a href="about.html">ABOUT US</a></li>
+							<li class="menuButton"><a href="index.html">ADVERTISE</a></li>
 						</ul>
 						<hr>
 					</nav>
 				</div>
 				<div class="center surrounded">
-					<img src="assets/Icones/mapWhite.png" alt="Map icon">
+					<img class="survol" src="assets/Icones/mapGrey.png">
+					<img class="normal" src="assets/Icones/mapWhite.png">
 				</div>
 				<div class="right framed">
 					<nav>
 						<hr>
 						<ul>
-							<li>FACOBOOK</li>
-							<li>TWITTER</li>
-							<li>INSTAGRAM</li>
-							<li>BLOG</li>
+							<li class="menuButton"><a href="index.html">FACOBOOK</a></li>
+							<li class="menuButton"><a href="index.html">TWITTER</a></li>
+							<li class="menuButton"><a href="index.html">INSTAGRAM</a></li>
+							<li class="menuButton"><a href="index.html">BLOG</a></li>
 						</ul>
 						<hr>
 					</nav>
