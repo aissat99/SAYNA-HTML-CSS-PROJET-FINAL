@@ -192,7 +192,7 @@ form .input2{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 5em 2.5%;
+	margin: 2.5em 2.5%;
 	padding: 3em 0;
 	box-shadow: 0 0 10px gray;
 }
@@ -289,5 +289,60 @@ form .input2{
 	display: flex;
 	justify-content: center;
 	font-size: medium;
+	font-family: inherit;
+}
+
+/*more details*/
+.moreInfo{
+	width: 95%;
+	height: fit-content;
+	margin: auto;
+	background-color: #eee;
+}
+
+.moreInfo div{
+	width: 20%;
+	padding: 1em 0;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-start;
+}
+
+.moreInfo img{
+	width: 10%;
+}
+.moreInfo button{
+	border: none;
+	background-color: unset;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	font-size: medium;
+	text-transform: uppercase;
+}
+
+.moreInfo a{
+	text-decoration: none;
+	color: black;
+}
+
+.moreInfo a:hover{
+	text-decoration: underline;
+}
+
+/*la carte*/
+.map{
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 3em 0;
+	margin: auto;
+}
+
+.map h2{
+	font-size: larger;
+	font-weight: normal;
 	font-family: inherit;
 }
