@@ -1,3 +1,4 @@
+/*INDEX*/
 /*barre de rrecherche*/
 .searchArea{
 	background-image: url("../Images/group-1.jpg");
@@ -180,4 +181,62 @@ form .input2{
 
 .two button{
 	color: #98a5a5;
+}
+
+/*END INDEX*/
+/*ABOUT*/
+
+/*search result*/
+.searchResult{
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5em 2.5%;
+	box-shadow: 0 0 10px gray;
+}
+
+/*titre dans searchResult*/
+
+.rouge{
+	color: #d35649;
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin: 1em 35%;
+}
+.resultInfo{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.resultInfo div{
+	width: 45%;
+	margin: 0.5em 0;
+	box-shadow: 0 0 5px gray;
+}
+
+/*Location, initial date etc, blocs de réponse*/
+.info p{
+	text-align: center;
+	font-family: inherit;
+}
+
+/*elements en bleu*/
+.result{
+	font-family: inherit;
+	color: #509bd7;
+	font-weight: bold;
+}
+
+/*icones de communication dans resultInfo*/
+.coordonnees img{
+	width: 3%;
+}
+
+.rouge img{
+	width: 10%;
+	margin-right: 0.2em;
 }
